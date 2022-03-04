@@ -34,3 +34,24 @@ def busca(nome_arquivo):
             print("Busca realizada com sucesso!")
     except:
         print("Arquivo não encontrado, realize o cadastro antes de acessar a busca")
+
+def main():
+    arquivo = "GrupoDePessoas.txt"
+    a = int(input("Digite a opção:\n1-Cadastro\n2-Busca\n0-Exit\n"))
+    
+    if(a == 1):
+        n = int(input("Digite quantos usuários deseja cadastrar:"))
+        arquivo = cadastro(n)
+        main()
+
+    elif(a == 2):
+    
+        busca(arquivo)
+        main()
+    elif(a == 0):
+        print("Execução finalizada!")
+    else:
+        print("opção inválida")
+        main()
+
+main()

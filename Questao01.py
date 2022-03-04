@@ -49,7 +49,7 @@ def main():
         busca(arquivo)
         main()
     elif(a == 0):
-        print("Execução finalizada!")
+        print("Execução finalizada com sucesso!")
     else:
         print("opção inválida")
         main()
